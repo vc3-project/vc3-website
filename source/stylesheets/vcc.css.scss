@@ -1,6 +1,9 @@
 @charset "utf-8";
 @import "compass";
 
+$body-bg: #505050;
+$text-color: #c2c2c2;
+
 $font-family-sans-serif: "Open Sans", Arial, sans-serif;
 $font-size-base: 16px;
 
@@ -9,7 +12,13 @@ $font-size-h3: $font-size-base;
 
 $headings-font-weight: 700;
 
+$btn-default-bg:                 #ccc !default;
+
 @import "_bootstrap";
+
+body {
+  background-color: #505050;
+}
 
 h1, .h1, 
 h2, .h2,
@@ -17,6 +26,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
+  color: #ffffff;
   margin-top: 0;
 }
 
@@ -32,21 +42,93 @@ li {
 p { 
   font-weight: 300; 
 }
+.logo {
+  img {
+    margin-bottom: floor(($line-height-computed * 1));
+    margin-top: floor(($line-height-computed * 3));
+  }
+  @media (max-width: $screen-xs-max) {
+    text-align: center;
+  }
+}
 
 .lead {
   font-size: floor(($font-size-base * 2.25));
   font-weight: 200;
   line-height: floor(($line-height-computed * 2));
+  margin-bottom: floor(($line-height-computed * 4));
 }
 
 .band {
-  padding-top: $line-height-computed;
-  padding-bottom: floor(($line-height-computed / 2));
+  background-color: #474747;
+  padding-top: floor(($line-height-computed * 4));
+  padding-bottom: floor(($line-height-computed * 4));
+  @media (max-width: $screen-xs-max) {
+    padding-top: floor(($line-height-computed * 3));
+    padding-bottom: floor(($line-height-computed * 3));
+    h2 {
+      text-align: center;
+    }
+  }
+}
+.band.narrow {
+  padding-top: floor(($line-height-computed * 3));
+  padding-bottom: floor(($line-height-computed * 3));
+}
+.illustration {
+  @media (max-width: $screen-xs-max) {
+    padding-bottom: floor(($line-height-computed * 2));
+    text-align: center;
+  }
+}
+
+#background_band_1 {
+  background-image: url("/images/bg-1.png");
+  background-position: 50% 0;
+  height: 274px;
+}
+#background_band_2 {
+  background-image: url("/images/bg-2.png");
+  background-position: 50% 0;
+  height: 274px;
+}
+#background_band_3 {
+  background-image: url("/images/bg-3.png");
+  background-position: 50% 0;
+  height: 274px;
+}
+
+.emailform {
+  background-color: #333333;
+  border: 10px solid #999999;
+  margin-top: floor(($line-height-computed * 4));
+  margin-bottom: floor(($line-height-computed * 4));
+  padding-top: floor(($line-height-computed * 2.5));
+  h2 {
+    margin-bottom: $line-height-computed;
+    text-align: center;
+  }
+  form {
+    margin-bottom: floor(($line-height-computed * 3));
+    @media (max-width: $screen-xs-max) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
 }
 
 footer {
   font-size: ceil(($font-size-base * .75)); // ~12px
-  padding-top: $line-height-computed;
-  padding-bottom: foor(($line-height-computed / 2));
   text-align: center;
+}
+
+.separator {
+  @media (max-width: $screen-sm-max) {
+    display: none;
+  }
+}
+
+.copyright {
+  color: #aaaaaa;
+  padding-top: $line-height-computed;
 }
