@@ -1,0 +1,12 @@
+<% wrap_layout :layout do %>
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="h2"><%= current_page.data.title %></h1>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

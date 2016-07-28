@@ -1,12 +1,12 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "VC3" %></title>
+    <title><%= current_page.data.title %> | VC3</title>
 
     <!-- Latest compiled and minified JavaScript -->
     <!--
@@ -23,7 +23,12 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 logo">
-          <img alt="VC3" src="/images/vc3-logo.png"/>
+          <h1>
+            <a href="/">
+              <img alt="VC3" src="/images/vc3-logo.png"/>
+            </a>
+          </h1>
+          <p><a href="/news.html">News</a> &middot; <a href="/pageone.html">Page One</a> &middot; <a href="/pagetwo.html">Page Two</a></p>
           <p class="lead">Automatically <em>discover</em>, <em>provision</em>, and
     <em>manage</em> the resources to build virtual clusters&#8212;dynamic
     infrastructures that enable extreme scale scientific computation.</p>
@@ -38,11 +43,11 @@
             <a href="https://www.bnl.gov/world/">
               <img alt="Brookhaven National Laboratory" src="/images/brookhaven-national-laboratory.png"/>
             </a>
-            <img class="separator" src="/images/separator.png"/>
+            <img alt="" class="separator" src="/images/separator.png"/>
             <a href="https://www.uchicago.edu/">
               <img alt="The University of Chicago" src="/images/university-of-chicago.png"/>
             </a>
-            <img class="separator" src="/images/separator.png"/>
+            <img alt="" class="separator" src="/images/separator.png"/>
             <a href="https://www.nd.edu/">
               <img alt="University of Notre Dame" src="/images/university-of-notre-dame.png"/>
             </a>

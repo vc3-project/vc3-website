@@ -3,6 +3,11 @@
 
 $body-bg: #505050;
 $text-color: #c2c2c2;
+// alternate: lime green, #bae240
+$brand-primary: #fccc26;
+$link-hover-color: $brand-primary;
+
+$btn-primary-color: #000;
 
 $font-family-sans-serif: "Open Sans", Arial, sans-serif;
 $font-size-base: 16px;
@@ -18,6 +23,11 @@ $btn-default-bg:                 #ccc !default;
 
 body {
   background-color: #505050;
+}
+div.content {
+  background-color: #404040;
+  padding-top: floor(($line-height-computed * 2));
+  padding-bottom: floor(($line-height-computed * 2));
 }
 
 h1, .h1, 
@@ -44,8 +54,8 @@ p {
 }
 .logo {
   img {
-    margin-bottom: floor(($line-height-computed * 1));
-    margin-top: floor(($line-height-computed * 3));
+    margin-bottom: floor(($line-height-computed / 2));
+    margin-top: floor(($line-height-computed * 2));
   }
   @media (max-width: $screen-xs-max) {
     text-align: center;
@@ -56,17 +66,20 @@ p {
   font-size: floor(($font-size-base * 2.25));
   font-weight: 200;
   line-height: floor(($line-height-computed * 2));
-  margin-bottom: floor(($line-height-computed * 4));
+  margin-bottom: floor(($line-height-computed * 2));
 }
 
 .band {
-  background-color: #474747;
+  background-color: #404040;
   padding-top: floor(($line-height-computed * 4));
   padding-bottom: floor(($line-height-computed * 4));
-  @media (max-width: $screen-xs-max) {
-    padding-top: floor(($line-height-computed * 3));
-    padding-bottom: floor(($line-height-computed * 3));
-    h2 {
+  h2 {
+    @media (max-width: $screen-xs-max) {
+      text-align: center;
+    }
+  }
+  p {
+    @media (max-width: $screen-xs-max) {
       text-align: center;
     }
   }
@@ -102,7 +115,7 @@ p {
   background-color: #333333;
   border: 10px solid #999999;
   margin-top: floor(($line-height-computed * 4));
-  margin-bottom: floor(($line-height-computed * 4));
+  margin-bottom: floor(($line-height-computed * 2));
   padding-top: floor(($line-height-computed * 2.5));
   h2 {
     margin-bottom: $line-height-computed;
@@ -119,16 +132,60 @@ p {
 
 footer {
   font-size: ceil(($font-size-base * .75)); // ~12px
+  margin-top: floor(($line-height-computed * 2));
   text-align: center;
-}
-
-.separator {
-  @media (max-width: $screen-sm-max) {
-    display: none;
+  .separator {
+    @media (max-width: $screen-sm-max) {
+      display: none;
+    }
+  }
+  .copyright {
+    color: #aaaaaa;
+    padding-top: $line-height-computed;
   }
 }
 
-.copyright {
-  color: #aaaaaa;
-  padding-top: $line-height-computed;
+article.news {
+  margin-bottom: $line-height-computed;
+  h2 {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  p.time {
+    margin-bottom: 0;
+  }
+  p:nth-last-child(2) {
+    margin-bottom: 0;
+  }
 }
+
+div.news-sidebar {
+  h2 {
+    text-align: left;
+  }
+  h3 {
+    color: $text-color;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+  li {
+    list-style: none;
+    text-indent: -.5em;
+  }
+  li:before { 
+    content: '\b7\a0';
+  }
+  ul {
+    padding-left: 1em;
+  }
+}
+
+div.news-sidebar-section {
+  margin-bottom: floor(($line-height-computed * 2));
+  @media (max-width: $screen-xs-max) {
+    border-top: 1px solid #555555;
+    padding-top: $line-height-computed;
+    margin-bottom: $line-height-computed;
+  }
+}
+  
