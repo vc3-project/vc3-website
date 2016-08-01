@@ -13,28 +13,27 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     -->
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300italic,300,400italic,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
 
     <%= stylesheet_link_tag "vcc" %>
     <%= javascript_include_tag "vcc" %>
   </head>
 
   <body class="<%= page_classes %>">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 logo">
-          <h1>
-            <a href="/">
-              <img alt="VC3" src="/images/vc3-logo.png"/>
-            </a>
-          </h1>
-          <p><a href="/news.html">News</a> &middot; <a href="/pageone.html">Page One</a> &middot; <a href="/pagetwo.html">Page Two</a></p>
-          <p class="lead">Automatically <em>discover</em>, <em>provision</em>, and
-    <em>manage</em> the resources to build virtual clusters&#8212;dynamic
-    infrastructures that enable extreme scale scientific computation.</p>
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1><a href="/">VC3</a></h1>
+            <ul>
+              <li><a class="news" href="/news.html">News</a></li>
+              <li><a class="pageone" href="/pageone.html">Page One</a></li>
+              <li><a class="pagetwo" href="/pagetwo.html">Page Two</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </nav>
     <%= yield %>
     <footer>
       <div class="container">
