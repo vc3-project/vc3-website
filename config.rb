@@ -32,11 +32,15 @@ end
 ###
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def nav_link(link_text, url, options = {})
+    if current_page.url == url
+      '<li class="active">' + link_to(link_text, url, options) + '</li>'
+    else
+      '<li>' + link_to(link_text, url, options) + '</li>'
+    end
+  end
+end
 
 # Build-specific configuration
 configure :build do

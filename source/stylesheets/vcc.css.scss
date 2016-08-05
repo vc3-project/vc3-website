@@ -5,7 +5,11 @@ $body-bg: #505050;
 $text-color: #c2c2c2;
 // alternate: lime green, #bae240
 $brand-primary: #fccc26;
+
+$navbar-inverse-bg: #141414;
+$navbar-inverse-brand-color: $brand-primary;
 $link-hover-color: $brand-primary;
+$navbar-inverse-toggle-hover-bg: #000;
 
 $btn-primary-color: #000;
 
@@ -26,6 +30,7 @@ $btn-default-bg:                 #ccc !default;
 
 body {
   background-color: #404040;
+  padding-top: floor(($line-height-computed * 1.5));
 }
 body.index {
   background-color: #505050;
@@ -60,10 +65,11 @@ p {
 }
 
 .lead {
+  color: #aaa;
   font-size: floor(($font-size-base * 3));
-  font-weight: 100;
+  font-weight: 300;
   line-height: floor(($line-height-computed * 2.5));
-  margin-top: floor(($line-height-computed * 2));
+  margin-top: floor(($line-height-computed * 2.5));
   margin-bottom: floor(($line-height-computed * 2.5));
 }
 
@@ -137,42 +143,6 @@ p {
     @media (max-width: $screen-xs-max) {
       margin-left: 20px;
       margin-right: 20px;
-    }
-  }
-}
-
-nav {
-  background-color: #141414;
-  color: #959595;
-  line-height: floor(($line-height-computed * 1.5));
-  text-transform: uppercase;
-  h1, p, li, ul {
-    display: inline;
-    font-size: inherit;
-    line-height: inherit;
-    margin-bottom: 0px;
-    margin-right: $line-height-computed;
-  }
-  a:link, a:visited, a:hover, a:active {
-    color: #959595;
-  }
-  h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
-    color: $brand-primary;
-    font-size: ceil(($font-size-base * 1.333)); // ~24px
-  }
-  li {
-    white-space: nowrap;
-  }
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  @media (max-width: $screen-xs-max) {
-    li, ul {
-      display: block;
-    }
-    ul {
-      margin-bottom: floor(($line-height-computed / 2));
     }
   }
 }
