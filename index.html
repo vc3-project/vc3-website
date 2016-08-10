@@ -1,29 +1,189 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Welcome to Middleman</title>
+    <title>Virtual Clusters for Community Computation | VC3</title>
 
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified JavaScript -->
+    <!--
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    -->
 
-    <link href="/stylesheets/site.css" rel="stylesheet" />
-    <script src="/javascripts/all.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300italic,300,400italic,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
+
+    <link href="/stylesheets/vcc.css" rel="stylesheet" />
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/vcc.js"></script>
   </head>
 
   <body class="index">
-    <div class="welcome">
-  <div class="logo">
-    <img src="/images/middleman-logo.svg" alt="Middleman logo" />
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h1><a class="navbar-brand" href="/">VC3</a></h1>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/news.html">News</a></li>
+            <li><a href="/pageone.html">Page One</a></li>
+            <li><a href="/pagetwo.html">Page Two</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <p class="lead">Automatically <em>discover</em>, <em>provision</em>,
+      and <em>manage</em> the resources to build virtual clusters&#8212;dynamic
+      infrastructures that enable extreme scale scientific computation.</p>
+    </div>
   </div>
-  <h1>Middleman is Running</h1>
-  <p class="doc">
-    <a href="https://middlemanapp.com" target="_blank">Read Documentation Online</a>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+</div>
 
+<div class="band narrow">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Resources in Flux</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <p>Modern science research requires massive amounts of computational
+resources. Instruments produce data at the petabyte scale. In addition, modern
+research teams are dynamic, constantly growing and changing to meet the needs
+of the science discovery process. The shared processing power, storage,
+instruments, software and networks a team assembles through its members will
+change during the life of an experiment.</p>
+      </div>
+      <div class="col-sm-6">
+        <p>The VC3 project goal is to create the software to build and use
+virtual clusters that represent these changing resources. With virtual
+clusters, peers scattered all over the globe can use federated resources in a
+way that is flexible and agile.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="background_band_1"></div>
+
+<div class="band gradient">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-4 illustration">
+        <img alt="A decorative image of a tangram, a puzzle consisting of a square cut into seven pieces that can be arranged to make various other shapes." class="img-responsive" src="/images/tangram-1.png"/>
+      </div>
+      <div class="clearfix visible-xs"> </div>
+      <div class="col-sm-4">
+        <h2>Discovery</h2>
+        <p>Create an environment that facilitates the discovery of computing
+resources like processor time, data storage and networking across
+geographically distributed, dynamic virtual organizations.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="background_band_2"></div>
+
+<div class="band gradient">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-4 illustration">
+        <img alt="A decorative image of a tangram, a puzzle consisting of a square cut into seven pieces that can be arranged to make various other shapes." class="img-responsive" src="/images/tangram-2.png"/>
+      </div>
+      <div class="clearfix visible-xs"> </div>
+      <div class="col-sm-4">
+        <h2>Provisioning</h2>
+        <p>Build an autonomous software agent that can provision resources with
+general guidance from scientists. Provisioning will be flexible, resilient,
+high throughput, and rapidly reconfigurable at runtime.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="background_band_3"></div>
+
+<div class="band gradient">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-4 illustration">
+         <img alt="A decorative image of a tangram, a puzzle consisting of a square cut into seven pieces that can be arranged to make various other shapes." class="img-responsive" src="/images/tangram-3.png"/>
+      </div>
+      <div class="clearfix visible-xs"> </div>
+      <div class="col-sm-4">
+        <h2>Management</h2>
+        <p>Find ways to streamline data management and analysis. Make research
+results friendly to interactive analytics and discoverable by current and
+future team members.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="emailform">
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
+            <h2>Get project updates:</h2>
+            <form action="https://getsimpleform.com/messages?form_api_token=157db69ce89e72e4294f47394ad8698c" method="post">
+              <input type='hidden' name='redirect_to' value='http://localhost:4567/thankyou.html' />
+              <div class="form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="text">
+              </div>
+              <div class="form-group">
+                <input class="btn btn-primary form-control" type="submit" value="Sign up">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="https://www.bnl.gov/world/">
+              <img alt="Brookhaven National Laboratory" src="/images/brookhaven-national-laboratory.png"/>
+            </a>
+            <img alt="" class="separator" src="/images/separator.png"/>
+            <a href="https://www.uchicago.edu/">
+              <img alt="The University of Chicago" src="/images/university-of-chicago.png"/>
+            </a>
+            <img alt="" class="separator" src="/images/separator.png"/>
+            <a href="https://www.nd.edu/">
+              <img alt="University of Notre Dame" src="/images/university-of-notre-dame.png"/>
+            </a>
+            <p class="copyright">
+              &copy; 2016 Brookhaven National Laboratory, The University of Chicago, and University of Notre Dame.<br>
+              This project is funded by a grant from the US Department of Energy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
