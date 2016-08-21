@@ -22,6 +22,10 @@ activate :blog do |blog|
   blog.sources = "blog/{year}-{month}-{day}-{title}.html"
 end
 
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+end
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload

@@ -8,16 +8,14 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title> | VC3</title>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <!--
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    -->
-
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300italic,300,400italic,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
 
     <link href="/stylesheets/vcc.css" rel="stylesheet" />
     <script src="/javascripts/jquery-3.1.0.min.js"></script>
     <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/assets/unslider/js/unslider-min.js" type="text/javascript"></script>
+    <link href="/assets/unslider/css/unslider.css" rel="stylesheet" type="text/css">
+    <link href="/assets/unslider/css/unslider-dots.css" rel="stylesheet" type="text/css">
     <script src="/javascripts/vcc.js"></script>
   </head>
 
@@ -32,7 +30,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <h1><a class="navbar-brand" href="/">VC3</a></h1>
+          <h1><a class="navbar-brand" href="/"><img src="/images/vc3-logo.png"/>VC3</a></h1>
         </div>
     
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -45,12 +43,11 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-      <div class="content">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1 class="h2"></h1>
-          @charset "UTF-8";
+      <div class="container content">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="h2"></h1>
+        @charset "UTF-8";
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -1447,8 +1444,8 @@ body {
   font-family: "Lato", Arial, sans-serif;
   font-size: 17px;
   line-height: 1.41176471;
-  color: #c2c2c2;
-  background-color: #505050; }
+  color: #5c5c5c;
+  background-color: #e1e1e1; }
 
 /* line 36, bootstrap/_scaffolding.scss */
 input,
@@ -1495,7 +1492,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.41176471;
-  background-color: #505050;
+  background-color: #e1e1e1;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2917,7 +2914,7 @@ th {
     border-top: 2px solid #ddd; }
   /* line 62, bootstrap/_tables.scss */
   .table .table {
-    background-color: #505050; }
+    background-color: #e1e1e1; }
 
 /* line 75, bootstrap/_tables.scss */
 .table-condensed > thead > tr > th,
@@ -3592,7 +3589,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: white; }
+  color: #9c9c9c; }
 
 @media (min-width: 768px) {
   /* line 478, bootstrap/_forms.scss */
@@ -4597,7 +4594,7 @@ tbody.collapse.in {
     /* line 96, bootstrap/_navs.scss */
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
       color: #555555;
-      background-color: #505050;
+      background-color: #e1e1e1;
       border: 1px solid #ddd;
       border-bottom-color: transparent;
       cursor: default; }
@@ -4672,7 +4669,7 @@ tbody.collapse.in {
     .nav-tabs.nav-justified > .active > a:hover,
     .nav-tabs-justified > .active > a:focus,
     .nav-tabs.nav-justified > .active > a:focus {
-      border-bottom-color: #505050; } }
+      border-bottom-color: #e1e1e1; } }
 
 /* line 224, bootstrap/_navs.scss */
 .tab-content > .tab-pane {
@@ -5514,7 +5511,7 @@ a.badge:hover, a.badge:focus {
   padding: 4px;
   margin-bottom: 23px;
   line-height: 1.41176471;
-  background-color: #505050;
+  background-color: #e1e1e1;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -5531,7 +5528,7 @@ a.badge:hover, a.badge:focus {
   /* line 27, bootstrap/_thumbnails.scss */
   .thumbnail .caption {
     padding: 9px;
-    color: #c2c2c2; }
+    color: #5c5c5c; }
 
 /* line 34, bootstrap/_thumbnails.scss */
 a.thumbnail:hover,
@@ -7315,48 +7312,75 @@ button.close {
   /* line 18, bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important; } }
-/* line 31, vcc.css.scss */
+/* line 30, vcc.css.scss */
 body {
-  background-color: #404040;
-  padding-top: 34px; }
+  padding-top: 73px; }
 
-/* line 35, vcc.css.scss */
-body.index {
-  background-color: #505050; }
-
-/* line 38, vcc.css.scss */
+/* line 33, vcc.css.scss */
 div.content {
-  background-color: #404040;
+  background-color: white;
+  color: #333;
   padding-top: 46px;
   padding-bottom: 46px; }
 
-/* line 44, vcc.css.scss */
+/* line 40, vcc.css.scss */
 h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  color: #ffffff;
+  color: #252525;
   margin-top: 0; }
 
-/* line 54, vcc.css.scss */
+/* line 50, vcc.css.scss */
 h1, .h1 {
   font-weight: 700; }
 
-/* line 57, vcc.css.scss */
+/* line 53, vcc.css.scss */
 h2, .h2 {
   font-weight: 700; }
 
-/* line 60, vcc.css.scss */
+/* line 56, vcc.css.scss */
 li {
   font-weight: 300; }
 
-/* line 63, vcc.css.scss */
+/* line 59, vcc.css.scss */
 p {
   font-weight: 300; }
 
-/* line 67, vcc.css.scss */
+/* line 63, vcc.css.scss */
+.navbar-brand > img {
+  display: inline;
+  padding-right: .4em;
+  position: relative;
+  top: -2px; }
+
+/* line 70, vcc.css.scss */
+.unslider .unslider-nav li {
+  background-color: #e4e4e4;
+  border: none;
+  height: 8px;
+  width: 8px; }
+
+/* line 76, vcc.css.scss */
+.unslider .unslider-nav li.unslider-active {
+  background-color: #888888; }
+
+@media (min-width: 768px) {
+  /* line 79, vcc.css.scss */
+  .carousel-text {
+    padding-top: 23px; } }
+@media (min-width: 992px) {
+  /* line 79, vcc.css.scss */
+  .carousel-text {
+    padding-top: 46px; } }
+@media (min-width: 1200px) {
+  /* line 79, vcc.css.scss */
+  .carousel-text {
+    padding-top: 92px; } }
+
+/* line 91, vcc.css.scss */
 .lead {
   color: #aaa;
   font-size: 51px;
@@ -7365,152 +7389,155 @@ p {
   margin-top: 57px;
   margin-bottom: 57px; }
 
-/* line 76, vcc.css.scss */
+/* line 100, vcc.css.scss */
+.vc3-light-bg {
+  background-color: #ffffff; }
+
+/* line 103, vcc.css.scss */
+.vc3-dark-bg {
+  background-color: #323232;
+  color: #ffffff; }
+
+/* line 108, vcc.css.scss */
+.card {
+  margin-bottom: 23px; }
+
+/* line 111, vcc.css.scss */
+.vc3-dpm {
+  padding-top: 69px;
+  padding-bottom: 69px; }
+
+/* line 116, vcc.css.scss */
 .band {
   background-color: #333333;
   padding-top: 92px;
   padding-bottom: 92px; }
   @media (max-width: 767px) {
-    /* line 80, vcc.css.scss */
+    /* line 120, vcc.css.scss */
     .band h2 {
       text-align: center; } }
   @media (max-width: 767px) {
-    /* line 85, vcc.css.scss */
+    /* line 125, vcc.css.scss */
     .band p {
       text-align: center; } }
 
-/* line 92, vcc.css.scss */
-.band.gradient {
-  background-position: 75% 50%;
-  /* Safari 4-5, Chrome 1-9 */
-  background: -webkit-gradient(radial, 75% 50%, 0, center center, 460, from(#3f3f3f), to(#2d2d2d));
-  /* Safari 5.1+, Chrome 10+ */
-  background: -webkit-radial-gradient(circle, #3f3f3f, #2d2d2d);
-  /* Firefox 3.6+ */
-  background: -moz-radial-gradient(circle, #3f3f3f, #2d2d2d);
-  /* IE 10 */
-  background: -ms-radial-gradient(circle, #3f3f3f, #2d2d2d); }
+@media (max-width: 767px) {
+  /* line 132, vcc.css.scss */
+  .illustration {
+    text-align: center; } }
 
-/* line 104, vcc.css.scss */
+/* line 138, vcc.css.scss */
 .band.narrow {
   padding-top: 69px;
   padding-bottom: 69px; }
 
-@media (max-width: 767px) {
-  /* line 108, vcc.css.scss */
-  .illustration {
-    padding-bottom: 46px;
-    text-align: center; } }
-
-/* line 115, vcc.css.scss */
+/* line 143, vcc.css.scss */
 #background_band_1 {
   background-image: url("/images/bg-1.png");
   background-position: 50% 0;
-  height: 274px; }
+  height: 269px; }
 
-/* line 120, vcc.css.scss */
+/* line 148, vcc.css.scss */
 #background_band_2 {
   background-image: url("/images/bg-2.png");
   background-position: 50% 0;
-  height: 274px; }
+  height: 269px; }
 
-/* line 125, vcc.css.scss */
+/* line 153, vcc.css.scss */
 #background_band_3 {
   background-image: url("/images/bg-3.png");
   background-position: 50% 0;
-  height: 274px; }
+  height: 269px; }
 
-/* line 131, vcc.css.scss */
+/* line 159, vcc.css.scss */
 .emailform {
   background-color: #333333;
-  border: 10px solid #999999;
-  margin-top: 92px;
   margin-bottom: 46px;
   padding-top: 57px; }
-  /* line 137, vcc.css.scss */
+  /* line 163, vcc.css.scss */
   .emailform h2 {
+    color: #eeeeee;
     margin-bottom: 23px;
     text-align: center; }
-  /* line 141, vcc.css.scss */
+  /* line 168, vcc.css.scss */
   .emailform form {
     margin-bottom: 69px; }
     @media (max-width: 767px) {
-      /* line 141, vcc.css.scss */
+      /* line 168, vcc.css.scss */
       .emailform form {
         margin-left: 20px;
         margin-right: 20px; } }
 
-/* line 150, vcc.css.scss */
+/* line 177, vcc.css.scss */
 body.news a.news:link, body.news a.news:visited, body.news a.news:hover, body.news a.news:active {
   color: white; }
 
-/* line 153, vcc.css.scss */
+/* line 180, vcc.css.scss */
 body.pageone a.pageone:link, body.pageone a.pageone:visited, body.pageone a.pageone:hover, body.pageone a.pageone:active {
   color: white; }
 
-/* line 156, vcc.css.scss */
+/* line 183, vcc.css.scss */
 body.pagetwo a.pagetwo:link, body.pagetwo a.pagetwo:visited, body.pagetwo a.pagetwo:hover, body.pagetwo a.pagetwo:active {
   color: white; }
 
-/* line 160, vcc.css.scss */
+/* line 187, vcc.css.scss */
 footer {
   font-size: 13px;
   margin-top: 46px;
   text-align: center; }
   @media (max-width: 991px) {
-    /* line 164, vcc.css.scss */
+    /* line 191, vcc.css.scss */
     footer .separator {
       display: none; } }
-  /* line 169, vcc.css.scss */
+  /* line 196, vcc.css.scss */
   footer .copyright {
     color: #aaaaaa;
     padding-top: 23px; }
 
-/* line 175, vcc.css.scss */
+/* line 202, vcc.css.scss */
 article.news {
   margin-bottom: 23px; }
-  /* line 177, vcc.css.scss */
+  /* line 204, vcc.css.scss */
   article.news h2 {
     margin-bottom: 0;
     text-align: left; }
-  /* line 181, vcc.css.scss */
+  /* line 208, vcc.css.scss */
   article.news p.time {
     margin-bottom: 0; }
-  /* line 184, vcc.css.scss */
+  /* line 211, vcc.css.scss */
   article.news p:nth-last-child(2) {
     margin-bottom: 0; }
 
-/* line 190, vcc.css.scss */
+/* line 217, vcc.css.scss */
 div.news-sidebar h2 {
   text-align: left; }
-/* line 193, vcc.css.scss */
+/* line 220, vcc.css.scss */
 div.news-sidebar h3 {
-  color: #c2c2c2;
+  color: #5c5c5c;
   font-size: 17px;
   font-weight: 300;
   margin-bottom: 0; }
-/* line 199, vcc.css.scss */
+/* line 226, vcc.css.scss */
 div.news-sidebar li {
   list-style: none;
   text-indent: -.5em; }
-/* line 203, vcc.css.scss */
+/* line 230, vcc.css.scss */
 div.news-sidebar li:before {
   content: '\b7\a0'; }
-/* line 206, vcc.css.scss */
+/* line 233, vcc.css.scss */
 div.news-sidebar ul {
   padding-left: 1em; }
 
-/* line 211, vcc.css.scss */
+/* line 238, vcc.css.scss */
 div.news-sidebar-section {
   margin-bottom: 46px; }
   @media (max-width: 767px) {
-    /* line 211, vcc.css.scss */
+    /* line 238, vcc.css.scss */
     div.news-sidebar-section {
       border-top: 1px solid #555555;
       padding-top: 23px;
       margin-bottom: 23px; } }
 
-        </div>
       </div>
     </div>
   </div>
@@ -7519,6 +7546,10 @@ div.news-sidebar-section {
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
+            <a href="https://energy.gov/">
+              <img alt="Department of Energy" src="/images/department-of-energy.png"/>
+            </a>
+            <br/>
             <a href="https://www.bnl.gov/world/">
               <img alt="Brookhaven National Laboratory" src="/images/brookhaven-national-laboratory.png"/>
             </a>

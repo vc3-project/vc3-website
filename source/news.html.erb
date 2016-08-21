@@ -4,77 +4,75 @@ layout: layout
 pageable: true
 ---
 
-<div class="content">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8">
-        <% if !blog.articles.empty? %>
-          <h2>Project News</h2>
-          <% blog.articles[page_start-1 .. page_end - 1].each do |article| %>
-            <article class="news">
-              <h2>
-                <a href="<%= article.url %>"><%= article.title %></a>
-              </h2>
-              <p class="time">
-                <%= article.date.strftime('%B %e, %Y') %>
-              </p>
-              <%= article.summary %>
-              <p>
-                <em><a href="<%= article.url %>">Read more &raquo;</a></em>
-              </p>
-            </article>
-          <% end %>
-          <div class="article pagination">
-            <p class="pagination__summary">Articles <%= page_start %> to <%= page_end %> of <%= articles.length %><% if prev_page or next_page %>:<% else %>.<% end %>
-              <% if prev_page %>
-                <a href="<%= prev_page.url %>">Newer articles</a>
-              <% end %>
-              <% if prev_page and next_page %>
-                &middot;
-              <% end %>
-              <% if next_page %>
-                <a href="<%= next_page.url %>">Older articles</a>
-              <% end %>
+<div class="container content">
+  <div class="row">
+    <div class="col-sm-8">
+      <% if !blog.articles.empty? %>
+        <h2>Project News</h2>
+        <% blog.articles[page_start-1 .. page_end - 1].each do |article| %>
+          <article class="news">
+            <h2>
+              <a href="<%= article.url %>"><%= article.title %></a>
+            </h2>
+            <p class="time">
+              <%= article.date.strftime('%B %e, %Y') %>
             </p>
-          </div>
+            <%= article.summary %>
+            <p>
+              <em><a href="<%= article.url %>">Read more &raquo;</a></em>
+            </p>
+          </article>
         <% end %>
-      </div>
-      <div class="col-sm-4 news-sidebar">
-        <% if !blog.articles.empty? %>
-          <div class="news-sidebar-section">
-            <h2>Posts By Year</h2>
-            <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-              <h3><%= year %></h3>
-              <ul>
-                <% articles.each do |article| %>
-                  <li>
-                    <a href="<%= article.url %>">
-                      <%= article.title %></a> <em class="text-nowrap"><small>[<%= article.date.strftime('%b %-e') %>]</small></em>
-                  </li>
-                <% end %>
-              </ul>
+        <div class="article pagination">
+          <p class="pagination__summary">Articles <%= page_start %> to <%= page_end %> of <%= articles.length %><% if prev_page or next_page %>:<% else %>.<% end %>
+            <% if prev_page %>
+              <a href="<%= prev_page.url %>">Newer articles</a>
             <% end %>
-          </div>
-        <% end %>
-    
-        <% if !blog.tags.empty? %>
-          <div class="news-sidebar-section">
-            <h2>Tags</h2>
-            <% blog.tags.sort.each do |tag, articles| %>
-              <h3><%= tag %></h3>
-              <ul>
-                <% articles.each do |article| %>
-                  <li>
-                    <a href="<%= article.url %>">
-                      <%= article.title %></a> <em class="text-nowrap"><small>[<%= article.date.strftime('%b %-e') %>]</small></em>
-                    </a>
-                  </li>
-                <% end %>
-              </ul>
+            <% if prev_page and next_page %>
+              &middot;
             <% end %>
-          </div>
-        <% end %>
-      </div>
+            <% if next_page %>
+              <a href="<%= next_page.url %>">Older articles</a>
+            <% end %>
+          </p>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-sm-4 news-sidebar">
+      <% if !blog.articles.empty? %>
+        <div class="news-sidebar-section">
+          <h2>Posts By Year</h2>
+          <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+            <h3><%= year %></h3>
+            <ul>
+              <% articles.each do |article| %>
+                <li>
+                  <a href="<%= article.url %>">
+                    <%= article.title %></a> <em class="text-nowrap"><small>[<%= article.date.strftime('%b %-e') %>]</small></em>
+                </li>
+              <% end %>
+            </ul>
+          <% end %>
+        </div>
+      <% end %>
+  
+      <% if !blog.tags.empty? %>
+        <div class="news-sidebar-section">
+          <h2>Tags</h2>
+          <% blog.tags.sort.each do |tag, articles| %>
+            <h3><%= tag %></h3>
+            <ul>
+              <% articles.each do |article| %>
+                <li>
+                  <a href="<%= article.url %>">
+                    <%= article.title %></a> <em class="text-nowrap"><small>[<%= article.date.strftime('%b %-e') %>]</small></em>
+                  </a>
+                </li>
+              <% end %>
+            </ul>
+          <% end %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
