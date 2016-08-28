@@ -69,6 +69,10 @@ p {
   background-position: 0 14px;
   background-repeat: no-repeat;
   padding-left: 30px;
+  @media (max-width: $screen-xs-max) {
+    background-position: 10px 14px;
+    padding-left: 40px;
+  }
 }
 .navbar-brand:hover,
 .navbar-brand:active {
@@ -111,6 +115,10 @@ p {
   line-height: floor(($line-height-computed * 2.5));
   margin-top: floor(($line-height-computed * 2.5));
   margin-bottom: floor(($line-height-computed * 2.5));
+  @media (max-width: $screen-xs-max) {
+    font-size: floor(($font-size-base * 2));
+    line-height: floor(($line-height-computed * 2));
+  }
 }
 
 .vc3-light-bg {
@@ -214,13 +222,27 @@ footer {
     padding-top: $line-height-computed;
   }
   .doe-logo {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
+    margin-top: 24px;
     position: relative;
     left: 10px;
+    @media (max-width: $screen-xs-max) {
+      max-width: 100%;
+    }
   }
   .small-logo {
     padding-right: 40px;
     padding-left: 40px;
+  }
+  #brookhaven-national-laboratory-logo {
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 3px;
+    }
+  }
+  #the-university-of-chicago-logo, #university-of-notre-dame-logo {
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 24px;
+    }
   }
 }
 
