@@ -45,11 +45,12 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-      <div class="container">
-    <div class="row">
-      <div class="col-xs-12 content">
-        <h1 class="h2"></h1>
-        @charset "UTF-8";
+      <div class="vc3-light-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 content">
+          <h1 class="h2"></h1>
+          @charset "UTF-8";
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -7316,13 +7317,13 @@ button.close {
     display: none !important; } }
 /* line 30, vcc.css.scss */
 body {
-  padding-top: 73px; }
+  padding-top: 50px; }
 
 /* line 33, vcc.css.scss */
 div.content {
   background-color: white;
   color: #333;
-  padding-top: 17px;
+  padding-top: 63px;
   padding-bottom: 17px; }
 
 /* line 40, vcc.css.scss */
@@ -7372,7 +7373,7 @@ p {
 .navbar-brand:active {
   background-image: url("/images/vc3-logo-white.png"); }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   /* line 84, vcc.css.scss */
   .unslider h2 {
     text-align: center; } }
@@ -7425,194 +7426,183 @@ p {
   color: #ffffff; }
 
 /* line 132, vcc.css.scss */
-.card {
-  margin-bottom: 23px; }
-
-/* line 135, vcc.css.scss */
 .vc3-dpm {
   padding-top: 69px;
   padding-bottom: 69px; }
   @media (max-width: 767px) {
-    /* line 135, vcc.css.scss */
+    /* line 132, vcc.css.scss */
     .vc3-dpm {
       padding-top: 46px;
       padding-bottom: 46px; }
-      /* line 141, vcc.css.scss */
+      /* line 138, vcc.css.scss */
       .vc3-dpm h2 {
         text-align: center; } }
 
-/* line 147, vcc.css.scss */
+/* line 144, vcc.css.scss */
 .band {
   background-color: #333333;
   padding-top: 92px;
   padding-bottom: 92px; }
   @media (max-width: 767px) {
-    /* line 151, vcc.css.scss */
+    /* line 148, vcc.css.scss */
     .band h2 {
       text-align: center; } }
   @media (max-width: 767px) {
-    /* line 156, vcc.css.scss */
+    /* line 153, vcc.css.scss */
     .band p {
       text-align: center; } }
 
 @media (max-width: 767px) {
-  /* line 163, vcc.css.scss */
+  /* line 160, vcc.css.scss */
   .illustration {
     text-align: center; }
-    /* line 166, vcc.css.scss */
+    /* line 163, vcc.css.scss */
     .illustration .img-responsive {
       display: inline; } }
 
-/* line 172, vcc.css.scss */
+/* line 169, vcc.css.scss */
 .band.narrow {
   padding-top: 69px;
   padding-bottom: 69px; }
 
-/* line 177, vcc.css.scss */
+/* line 174, vcc.css.scss */
 #background_band_1 {
   background-image: url("/images/bg-1.png");
   background-position: 50% 0;
   height: 194px; }
 
-/* line 182, vcc.css.scss */
+/* line 179, vcc.css.scss */
 #background_band_2 {
   background-image: url("/images/bg-2.png");
   background-position: 50% 0;
   height: 194px; }
 
-/* line 187, vcc.css.scss */
+/* line 184, vcc.css.scss */
 #background_band_3 {
   background-image: url("/images/bg-3.png");
   background-position: 50% 0;
   height: 194px; }
 
-/* line 193, vcc.css.scss */
+/* line 190, vcc.css.scss */
 .emailform {
   background-color: #333333;
-  margin-bottom: 46px;
   padding-top: 57px; }
-  /* line 197, vcc.css.scss */
+  /* line 193, vcc.css.scss */
   .emailform h2 {
     color: #eeeeee;
     margin-bottom: 23px;
     text-align: center; }
-  /* line 202, vcc.css.scss */
+  /* line 198, vcc.css.scss */
   .emailform form {
     margin-bottom: 69px; }
     @media (max-width: 767px) {
-      /* line 202, vcc.css.scss */
+      /* line 198, vcc.css.scss */
       .emailform form {
         margin-left: 20px;
         margin-right: 20px; } }
 
-/* line 211, vcc.css.scss */
+/* line 207, vcc.css.scss */
 footer {
   font-size: 13px;
-  margin-top: 46px;
+  padding-top: 46px;
   text-align: center; }
   @media (max-width: 991px) {
-    /* line 215, vcc.css.scss */
+    /* line 211, vcc.css.scss */
     footer .separator {
       display: none; } }
-  /* line 220, vcc.css.scss */
+  /* line 216, vcc.css.scss */
   footer .copyright {
     color: #aaaaaa;
     padding-top: 23px; }
-  /* line 224, vcc.css.scss */
+  /* line 220, vcc.css.scss */
   footer .doe-logo {
-    margin-bottom: 12px;
-    margin-top: 24px;
+    margin-top: 12px;
     position: relative;
     left: 10px; }
     @media (max-width: 767px) {
-      /* line 224, vcc.css.scss */
+      /* line 220, vcc.css.scss */
       footer .doe-logo {
         max-width: 100%; } }
-  /* line 233, vcc.css.scss */
+  /* line 228, vcc.css.scss */
   footer .small-logo {
-    padding-right: 40px;
-    padding-left: 40px; }
+    padding-right: 30px;
+    padding-left: 30px; }
   @media (max-width: 767px) {
-    /* line 237, vcc.css.scss */
+    /* line 232, vcc.css.scss */
     footer #brookhaven-national-laboratory-logo {
       margin-bottom: 3px; } }
   @media (max-width: 767px) {
-    /* line 242, vcc.css.scss */
+    /* line 237, vcc.css.scss */
     footer #the-university-of-chicago-logo, footer #university-of-notre-dame-logo {
       margin-bottom: 24px; } }
 
-/* line 249, vcc.css.scss */
+/* line 244, vcc.css.scss */
 article.news {
   margin-bottom: 23px; }
-  /* line 251, vcc.css.scss */
+  /* line 246, vcc.css.scss */
   article.news h2 {
     margin-bottom: 0;
     text-align: left; }
-  /* line 255, vcc.css.scss */
+  /* line 250, vcc.css.scss */
   article.news p.time {
     margin-bottom: 0; }
-  /* line 258, vcc.css.scss */
+  /* line 253, vcc.css.scss */
   article.news p:nth-last-child(2) {
     margin-bottom: 0; }
 
-/* line 264, vcc.css.scss */
+/* line 259, vcc.css.scss */
 div.news-sidebar h2 {
   text-align: left; }
-/* line 267, vcc.css.scss */
+/* line 262, vcc.css.scss */
 div.news-sidebar h3 {
   color: #5c5c5c;
   font-size: 17px;
   font-weight: 300;
   margin-bottom: 0; }
-/* line 273, vcc.css.scss */
+/* line 268, vcc.css.scss */
 div.news-sidebar li {
   list-style: none;
   text-indent: -.5em; }
-/* line 277, vcc.css.scss */
+/* line 272, vcc.css.scss */
 div.news-sidebar li:before {
   content: '\b7\a0'; }
-/* line 280, vcc.css.scss */
+/* line 275, vcc.css.scss */
 div.news-sidebar ul {
   padding-left: 1em; }
 
-/* line 285, vcc.css.scss */
+/* line 280, vcc.css.scss */
 div.news-sidebar-section {
   margin-bottom: 46px; }
   @media (max-width: 767px) {
-    /* line 285, vcc.css.scss */
+    /* line 280, vcc.css.scss */
     div.news-sidebar-section {
       border-top: 1px solid #555555;
       padding-top: 23px;
       margin-bottom: 23px; } }
 
+        </div>
       </div>
     </div>
   </div>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <a href="https://www.bnl.gov/world/">
-              <img alt="Brookhaven National Laboratory" class="small-logo" id="brookhaven-national-laboratory-logo" src="/images/brookhaven-national-laboratory.png"/>
-            </a>
-            <a href="https://www.uchicago.edu/">
-              <img alt="The University of Chicago" class="small-logo" id="the-university-of-chicago-logo" src="/images/university-of-chicago.png"/>
-            </a>
-            <a href="https://www.nd.edu/">
-              <img alt="University of Notre Dame" class="small-logo" id="university-of-notre-dame-logo" src="/images/university-of-notre-dame.png"/>
-            </a>
-            <br/>
-            <a href="http://science.energy.gov/ascr/">
-              <img alt="Department of Energy" class="doe-logo" src="/images/department-of-energy.png"/>
-            </a>
-            <p class="copyright">
-              &copy; 2016 Brookhaven National Laboratory, The University of Chicago, and University of Notre Dame.<br>
-              Supported by the Department of Energy Office of Advanced Scientific Computing Research and Next Generation Networking Services, Solicitation  DE-­FOA­0001344 (DDRM), Proposal 0000219942.
-            </p>
+    <div class="vc3-light-bg">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="https://www.bnl.gov/world/"><img alt="Brookhaven National Laboratory" class="small-logo" id="brookhaven-national-laboratory-logo" src="/images/brookhaven-national-laboratory.png"/></a>
+              <a href="https://www.uchicago.edu/"><img alt="The University of Chicago" class="small-logo" id="the-university-of-chicago-logo" src="/images/university-of-chicago.png"/></a>
+              <a href="https://www.nd.edu/"><img alt="University of Notre Dame" class="small-logo" id="university-of-notre-dame-logo" src="/images/university-of-notre-dame.png"/></a>
+              <br/>
+              <a href="http://science.energy.gov/ascr/"><img alt="Department of Energy" class="doe-logo" src="/images/department-of-energy.png"/></a>
+              <p class="copyright">
+                &copy; 2016 Brookhaven National Laboratory, The University of Chicago, and University of Notre Dame.<br>
+                Supported by the Department of Energy Office of Advanced Scientific Computing Research and Next Generation Networking Services, Solicitation  DE-­FOA­0001344 (DDRM), Proposal 0000219942.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
