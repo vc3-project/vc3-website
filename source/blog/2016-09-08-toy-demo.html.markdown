@@ -1,0 +1,31 @@
+---
+title: Play toy demos of primordial VC3 components
+date: 2016-09-08 06:31:52 CDT
+tags: demos
+---
+
+Our goal for the fall is to create a "capability demonstrator".  As we're just getting started we'll build from existing software and applications and mold them to higher level abstractions.
+
+
+### Deploy a global file system on the fly: 
+
+    $ vc3-pilot --require cvmfs
+
+    [Demonstration](https://asciinema.org/a/40j5dnd6m67yog3y4qa4tw957)
+
+### Deploy the MAKER application on the fly:
+
+   $ vc3-pilot --require maker-ecoli-example-01
+    
+   [Demonstration](https://asciinema.org/a/4qzmcrpmrzssxen6s1knkgw86)
+
+### VC3 jobs running on a campus cluster via "glide in"
+
+   [Demonstration](http://asciinema.org/a/7a9ku2k4z3ujtnr1v4cjo6mq3)
+
+### VC jobs running at ND via "hobble in"
+ 
+   [Demonstration](https://asciinema.org/a/84798)
+ 
+
+
