@@ -44,6 +44,11 @@ helpers do
       '<li>' + link_to(link_text, url, options) + '</li>'
     end
   end
+
+  def markdown(text)
+    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {})
+    markdown.render(text)
+  end
 end
 
 # Build-specific configuration

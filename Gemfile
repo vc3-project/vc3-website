@@ -15,6 +15,7 @@ gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 gem 'middleman-livereload'
 gem 'nokogiri'
+gem 'redcarpet'
 
 # VC3 Gems
 gem 'bootstrap-sass'
