@@ -40,11 +40,12 @@
           <ul class="nav navbar-nav">
             <li><a href="/news.html">News</a></li>
             <li><a href="/about.html">About</a></li>
+            <li><a href="/documentation.html">Documentation</a></li>
             <li><a href="/team.html">Team</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-	    <li><a href="http://github.com/vc3-project">Github</a></li>
-            <li><a href="http://twitter.com/virtualclusters">Twitter</a></li>
+            <li><a href="http://github.com/vc3-project" id="navlinks-github">Github</a></li>
+            <li><a href="http://twitter.com/virtualclusters" id="navlinks-twitter">Twitter</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
 
@@ -7320,22 +7321,38 @@ button.close {
   /* line 18, bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important; } }
-/* line 30, vcc.css.scss */
+/*
+ * We're using Bootstrap's fixed navbar.
+ * Links to things with anchors will be hidden behind
+ * the navbar without the following rule. 
+ * 
+ * see:
+ * https://github.com/twbs/bootstrap/issues/1768
+ */
+/* line 39, vcc.css.scss */
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -50px;
+  height: 50px;
+  visibility: hidden; }
+
+/* line 47, vcc.css.scss */
 body {
   padding-top: 50px; }
 
-/* line 33, vcc.css.scss */
+/* line 50, vcc.css.scss */
 div.content {
   background-color: white;
   color: #333;
   padding-top: 63px;
   padding-bottom: 17px; }
 
-/* line 40, vcc.css.scss */
+/* line 57, vcc.css.scss */
 a:link, a:visited, a:hover, a:active {
   color: #777; }
 
-/* line 44, vcc.css.scss */
+/* line 61, vcc.css.scss */
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -7345,69 +7362,93 @@ h6, .h6 {
   color: #252525;
   margin-top: 0; }
 
-/* line 54, vcc.css.scss */
+/* line 71, vcc.css.scss */
 h1, .h1 {
   font-weight: 700; }
 
-/* line 57, vcc.css.scss */
+/* line 74, vcc.css.scss */
 h2, .h2 {
   font-weight: 700; }
 
-/* line 60, vcc.css.scss */
+/* line 77, vcc.css.scss */
 li {
   font-weight: 300; }
 
-/* line 63, vcc.css.scss */
+/* line 80, vcc.css.scss */
 p {
   font-weight: 300; }
 
-/* line 67, vcc.css.scss */
+/* line 84, vcc.css.scss */
 .navbar-brand {
   background-image: url("/images/vc3-logo.png");
   background-position: 0 14px;
   background-repeat: no-repeat;
   padding-left: 30px; }
   @media (max-width: 767px) {
-    /* line 67, vcc.css.scss */
+    /* line 84, vcc.css.scss */
     .navbar-brand {
       background-position: 10px 14px;
       padding-left: 40px; } }
 
-/* line 77, vcc.css.scss */
+/* line 94, vcc.css.scss */
 .navbar-brand:hover,
 .navbar-brand:active {
   background-image: url("/images/vc3-logo-white.png"); }
 
+/* line 99, vcc.css.scss */
+#navlinks-github {
+  background-image: url("/images/github-logo-top.png");
+  background-position: 0 14px;
+  background-repeat: no-repeat;
+  padding-left: 30px; }
+
+/* line 105, vcc.css.scss */
+#navlinks-github:hover,
+#navlinks-github:active {
+  background-image: url("/images/github-logo-top-white.png"); }
+
+/* line 109, vcc.css.scss */
+#navlinks-twitter {
+  background-image: url("/images/twitter-logo-top.png");
+  background-position: 0 14px;
+  background-repeat: no-repeat;
+  padding-left: 30px; }
+
+/* line 115, vcc.css.scss */
+#navlinks-twitter:hover,
+#navlinks-twitter:active {
+  background-image: url("/images/twitter-logo-top-white.png"); }
+
 @media (max-width: 767px) {
-  /* line 84, vcc.css.scss */
+  /* line 122, vcc.css.scss */
   .unslider h2 {
     text-align: center; } }
 
-/* line 90, vcc.css.scss */
+/* line 128, vcc.css.scss */
 .unslider .unslider-nav li {
   background-color: #e4e4e4;
   border: none;
   height: 8px;
   width: 8px; }
 
-/* line 96, vcc.css.scss */
+/* line 134, vcc.css.scss */
 .unslider .unslider-nav li.unslider-active {
   background-color: #888888; }
 
 @media (min-width: 768px) {
-  /* line 99, vcc.css.scss */
+  /* line 137, vcc.css.scss */
   .carousel-text {
     padding-top: 23px; } }
 @media (min-width: 992px) {
-  /* line 99, vcc.css.scss */
+  /* line 137, vcc.css.scss */
   .carousel-text {
     padding-top: 46px; } }
 @media (min-width: 1200px) {
-  /* line 99, vcc.css.scss */
+  /* line 137, vcc.css.scss */
   .carousel-text {
     padding-top: 92px; } }
 
-/* line 111, vcc.css.scss */
+/* line 149, vcc.css.scss */
 .lead {
   color: #aaa;
   font-size: 51px;
@@ -7416,170 +7457,178 @@ p {
   margin-top: 57px;
   margin-bottom: 57px; }
   @media (max-width: 767px) {
-    /* line 111, vcc.css.scss */
+    /* line 149, vcc.css.scss */
     .lead {
       font-size: 34px;
       line-height: 46px; } }
 
-/* line 124, vcc.css.scss */
+/* line 162, vcc.css.scss */
 .vc3-light-bg {
   background-color: #ffffff; }
 
-/* line 127, vcc.css.scss */
+/* line 165, vcc.css.scss */
 .vc3-dark-bg {
   background-color: #323232;
   color: #ffffff; }
 
-/* line 132, vcc.css.scss */
+/* line 170, vcc.css.scss */
 .vc3-dpm {
   padding-top: 69px;
   padding-bottom: 69px; }
   @media (max-width: 767px) {
-    /* line 132, vcc.css.scss */
+    /* line 170, vcc.css.scss */
     .vc3-dpm {
       padding-top: 46px;
       padding-bottom: 46px; }
-      /* line 138, vcc.css.scss */
+      /* line 176, vcc.css.scss */
       .vc3-dpm h2 {
         text-align: center; } }
 
-/* line 144, vcc.css.scss */
+/* line 182, vcc.css.scss */
 .band {
   background-color: #333333;
   padding-top: 92px;
   padding-bottom: 92px; }
   @media (max-width: 767px) {
-    /* line 148, vcc.css.scss */
+    /* line 186, vcc.css.scss */
     .band h2 {
       text-align: center; } }
   @media (max-width: 767px) {
-    /* line 153, vcc.css.scss */
+    /* line 191, vcc.css.scss */
     .band p {
       text-align: center; } }
 
 @media (max-width: 767px) {
-  /* line 160, vcc.css.scss */
+  /* line 198, vcc.css.scss */
   .illustration {
     text-align: center; }
-    /* line 163, vcc.css.scss */
+    /* line 201, vcc.css.scss */
     .illustration .img-responsive {
       display: inline; } }
 
-/* line 169, vcc.css.scss */
+/* line 207, vcc.css.scss */
 .band.narrow {
   padding-top: 69px;
   padding-bottom: 69px; }
 
-/* line 174, vcc.css.scss */
+/* line 212, vcc.css.scss */
 #background_band_1 {
   background-image: url("/images/bg-1.png");
   background-position: 50% 0;
   height: 194px; }
 
-/* line 179, vcc.css.scss */
+/* line 217, vcc.css.scss */
 #background_band_2 {
   background-image: url("/images/bg-2.png");
   background-position: 50% 0;
   height: 194px; }
 
-/* line 184, vcc.css.scss */
+/* line 222, vcc.css.scss */
 #background_band_3 {
   background-image: url("/images/bg-3.png");
   background-position: 50% 0;
   height: 194px; }
 
-/* line 190, vcc.css.scss */
+/* line 228, vcc.css.scss */
 .emailform {
   background-color: #333333;
   padding-top: 57px; }
-  /* line 193, vcc.css.scss */
+  /* line 231, vcc.css.scss */
   .emailform h2 {
     color: #eeeeee;
     margin-bottom: 23px;
     text-align: center; }
-  /* line 198, vcc.css.scss */
+  /* line 236, vcc.css.scss */
   .emailform form {
     margin-bottom: 69px; }
     @media (max-width: 767px) {
-      /* line 198, vcc.css.scss */
+      /* line 236, vcc.css.scss */
       .emailform form {
         margin-left: 20px;
         margin-right: 20px; } }
 
-/* line 207, vcc.css.scss */
+/* line 245, vcc.css.scss */
 footer {
   font-size: 13px;
   padding-top: 46px;
   text-align: center; }
   @media (max-width: 991px) {
-    /* line 211, vcc.css.scss */
+    /* line 249, vcc.css.scss */
     footer .separator {
       display: none; } }
-  /* line 216, vcc.css.scss */
+  /* line 254, vcc.css.scss */
   footer .copyright {
     color: #aaaaaa;
     padding-top: 23px; }
-  /* line 220, vcc.css.scss */
+  /* line 258, vcc.css.scss */
   footer .doe-logo {
     margin-top: 12px;
     position: relative;
     left: 10px; }
     @media (max-width: 767px) {
-      /* line 220, vcc.css.scss */
+      /* line 258, vcc.css.scss */
       footer .doe-logo {
         max-width: 100%; } }
-  /* line 228, vcc.css.scss */
+  /* line 266, vcc.css.scss */
   footer .small-logo {
     padding-right: 30px;
     padding-left: 30px; }
   @media (max-width: 767px) {
-    /* line 232, vcc.css.scss */
+    /* line 270, vcc.css.scss */
     footer #brookhaven-national-laboratory-logo {
       margin-bottom: 3px; } }
   @media (max-width: 767px) {
-    /* line 237, vcc.css.scss */
+    /* line 275, vcc.css.scss */
     footer #the-university-of-chicago-logo, footer #university-of-notre-dame-logo {
       margin-bottom: 24px; } }
 
-/* line 244, vcc.css.scss */
+/* line 283, vcc.css.scss */
+div.documentation-sidebar ul {
+  list-style-type: none;
+  padding-left: 20px; }
+/* line 287, vcc.css.scss */
+div.documentation-sidebar > ul {
+  padding-left: 0; }
+
+/* line 292, vcc.css.scss */
 article.news {
   margin-bottom: 23px; }
-  /* line 246, vcc.css.scss */
+  /* line 294, vcc.css.scss */
   article.news h2 {
     margin-bottom: 0;
     text-align: left; }
-  /* line 250, vcc.css.scss */
+  /* line 298, vcc.css.scss */
   article.news p.time {
     margin-bottom: 0; }
-  /* line 253, vcc.css.scss */
+  /* line 301, vcc.css.scss */
   article.news p:nth-last-child(2) {
     margin-bottom: 0; }
 
-/* line 259, vcc.css.scss */
+/* line 307, vcc.css.scss */
 div.news-sidebar h2 {
   text-align: left; }
-/* line 262, vcc.css.scss */
+/* line 310, vcc.css.scss */
 div.news-sidebar h3 {
   color: #5c5c5c;
   font-size: 17px;
   font-weight: 300;
   margin-bottom: 0; }
-/* line 268, vcc.css.scss */
+/* line 316, vcc.css.scss */
 div.news-sidebar li {
   list-style: none;
   text-indent: -.5em; }
-/* line 272, vcc.css.scss */
+/* line 320, vcc.css.scss */
 div.news-sidebar li:before {
   content: '\b7\a0'; }
-/* line 275, vcc.css.scss */
+/* line 323, vcc.css.scss */
 div.news-sidebar ul {
   padding-left: 1em; }
 
-/* line 280, vcc.css.scss */
+/* line 328, vcc.css.scss */
 div.news-sidebar-section {
   margin-bottom: 46px; }
   @media (max-width: 767px) {
-    /* line 280, vcc.css.scss */
+    /* line 328, vcc.css.scss */
     div.news-sidebar-section {
       border-top: 1px solid #555555;
       padding-top: 23px;
