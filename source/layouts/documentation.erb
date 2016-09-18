@@ -1,0 +1,15 @@
+<% wrap_layout :layout do %>
+  <div class="vc3-light-bg">
+    <div class="container">
+      <div class="row content">
+        <div class="col-sm-4 documentation-sidebar">
+          <%= sidebar_nav current_page %>
+        </div>
+        <div class="col-sm-8">
+          <h1>Documentation</h1>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

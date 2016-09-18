@@ -27,6 +27,23 @@ $btn-default-bg:                 #ccc !default;
 
 @import "_bootstrap";
 
+/*
+ * We're using Bootstrap's fixed navbar.
+ * Links to things with anchors will be hidden behind
+ * the navbar without the following rule. 
+ * 
+ * see:
+ * https://github.com/twbs/bootstrap/issues/1768
+ */
+
+*[id]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -50px; 
+  height: 50px; 
+  visibility: hidden; 
+}
+
 body {
   padding-top: ceil(($line-height-computed * 2.17));
 }
@@ -77,6 +94,27 @@ p {
 .navbar-brand:hover,
 .navbar-brand:active {
   background-image: url("/images/vc3-logo-white.png");
+}
+
+#navlinks-github {
+  background-image: url("/images/github-logo-top.png");
+  background-position: 0 14px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+#navlinks-github:hover,
+#navlinks-github:active {
+  background-image: url("/images/github-logo-top-white.png");
+}
+#navlinks-twitter {
+  background-image: url("/images/twitter-logo-top.png");
+  background-position: 0 14px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+#navlinks-twitter:hover,
+#navlinks-twitter:active {
+  background-image: url("/images/twitter-logo-top-white.png");
 }
 
 .unslider {
@@ -238,6 +276,16 @@ footer {
     @media (max-width: $screen-xs-max) {
       margin-bottom: 24px;
     }
+  }
+}
+
+div.documentation-sidebar {
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  >ul {
+    padding-left: 0;
   }
 }
 
