@@ -1,0 +1,8 @@
+---
+documentation:
+  sectionOne: 
+    pageOne.html.markdown: "/documentation/sectionOne/pageOne.html.markdown"
+    pageTwo.html.markdown: "/documentation/sectionOne/pageTwo.html.markdown"
+  sectionTwo:
+    pageOne.html.markdown: "/documentation/sectionTwo/pageOne.html.markdown"
+    pageTwo.html.markdown: "/documentation/sectionTwo/pageTwo.html.markdown"

@@ -31,6 +31,8 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
 end
 
+activate :navtree
+
 # the blog has inbound non-directory indexes links from places like Twitter.
 #page "/news.html", :directory_index => false
 #page "/news.html", :directory_indexes => false

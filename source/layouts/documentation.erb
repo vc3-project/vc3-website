@@ -3,10 +3,9 @@
     <div class="container">
       <div class="row content">
         <div class="col-sm-4 documentation-sidebar">
-          <%= sidebar_nav current_page %>
+          <ul><%= tree_to_html(data.documentationtree) %></ul>
         </div>
         <div class="col-sm-8">
-          <h1>Documentation</h1>
           <%= yield %>
         </div>
       </div>

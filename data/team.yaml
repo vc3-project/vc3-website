@@ -1,7 +1,7 @@
 team_members:
 -
  # Team member name, as a string.
- team_member_name: Firstname Lastname 1
+ team_member_name: Firstname Lastname
  # An root-relative url of the team member's image. 
  team_member_image: /images/person_placeholder.jpg
  # Team member title, as a string.
@@ -14,7 +14,7 @@ team_members:
 
   Nullam lobortis libero sit amet maximus lobortis.
 -
- team_member_name: Firstname Lastname 2
+ team_member_name: Firstname Lastname
  team_member_image: /images/person_placeholder.jpg
  team_member_title: Donec finibus accumsan metus a ultricies
  team_member_description: |
@@ -22,7 +22,7 @@ team_members:
   porttitor ipsum**, vel hendrerit nulla. Pellentesque cursus sapien eu nisi
   congue egestas.
 -
- team_member_name: Firstname Lastname 3
+ team_member_name: Firstname Lastname
  team_member_image: /images/person_placeholder.jpg
  team_member_title: Mollis felis in suscipit a massa id egestas
  team_member_description: |
@@ -32,7 +32,7 @@ team_members:
   Nunc aliquet, felis id pharetra sollicitudin, dolor sem suscipit risus, non
   pretium urna ligula eu justo.
 -
- team_member_name: Firstname Lastname 4
+ team_member_name: Firstname Lastname
  team_member_image: /images/person_placeholder.jpg
  team_member_title: Sem ac luctus pretium maecenas quis gravida eros
  team_member_description: |
@@ -40,7 +40,7 @@ team_members:
   magna quis ornare fermentum. Quisque tincidunt iaculis nisi, molestie
   imperdiet mauris luctus eget.
 -
- team_member_name: Firstname Lastname 5
+ team_member_name: Firstname Lastname
  team_member_image: /images/person_placeholder.jpg
  team_member_title: Magna sagittis non tempor eu pharetra et nulla
  team_member_description: |
@@ -48,7 +48,7 @@ team_members:
   sagittis scelerisque urna, at malesuada nulla. In bibendum, ante sed gravida
   pharetra, ex justo feugiat urna, vitae tempus leo felis et tellus.
 -
- team_member_name: Firstname Lastname 6
+ team_member_name: Firstname Lastname
  team_member_image: /images/person_placeholder.jpg
  team_member_title: Tellus vitae eros efficitur tempus at ultrices neque
  team_member_description: |

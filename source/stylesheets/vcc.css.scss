@@ -96,25 +96,50 @@ p {
   background-image: url("/images/vc3-logo-white.png");
 }
 
-#navlinks-github {
-  background-image: url("/images/github-logo-top.png");
-  background-position: 0 14px;
-  background-repeat: no-repeat;
-  padding-left: 30px;
+.navbar-social-media-links li {
 }
-#navlinks-github:hover,
-#navlinks-github:active {
-  background-image: url("/images/github-logo-top-white.png");
+
+/* JEJ */
+@media (max-width: $screen-xs-max) {
+  .navbar-social-media-links {
+    margin-top: -6px;
+  }
+  #navlinks-get-project-updates {
+    padding-left: $navbar-padding-horizontal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #navlinks-github, #navlinks-twitter {
+    padding-left: 30px;
+  }
 }
-#navlinks-twitter {
-  background-image: url("/images/twitter-logo-top.png");
-  background-position: 0 14px;
-  background-repeat: no-repeat;
-  padding-left: 30px;
-}
-#navlinks-twitter:hover,
-#navlinks-twitter:active {
-  background-image: url("/images/twitter-logo-top-white.png");
+@media (min-width: $screen-sm-min) {
+  #navlinks-get-project-updates {
+    display: none;
+  }
+  #navlinks-github, #navlinks-twitter {
+    background-position: 0 14px;
+    background-repeat: no-repeat;
+    color: transparent;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 23px;
+  }
+  
+  #navlinks-github {
+    background-image: url("/images/github-logo-top.png");
+    margin-right: 10px;
+  }
+  #navlinks-github:hover, #navlinks-github:active {
+    background-image: url("/images/github-logo-top-white.png");
+  }
+  #navlinks-twitter {
+    background-image: url("/images/twitter-logo-top.png");
+    margin-right: 15px;
+  }
+  #navlinks-twitter:hover, #navlinks-twitter:active {
+    background-image: url("/images/twitter-logo-top-white.png");
+  }
 }
 
 .unslider {
@@ -202,6 +227,10 @@ p {
       display: inline;
     }
   }
+}
+
+.round {
+  border-radius: 50%;
 }
 
 .band.narrow {

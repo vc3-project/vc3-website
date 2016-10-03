@@ -9,13 +9,17 @@
       <% data.team.team_members.each_slice(2).to_a.each do |row| %>
         <div class="row">
           <% for m in row %>
-            <div class="col-sm-6">
+            <div class="col-xs-12 col-sm-6">
               <h2><%= m.team_member_name %></h2>
-              <p>
-                <img alt="<%= m.team_member_name %>" class="img-responsive round" src="<%= m.team_member_image %>" /><br/>
-                <em><%= m.team_member_title %></em>
-              </p>
-              <%= markdown m.team_member_description %>
+              <div class="row">
+                <div class="col-xs-2 col-sm-3">
+                  <img alt="<%= m.team_member_name %>" class="img-responsive round" src="<%= m.team_member_image %>" /><br/>
+                </div>
+                <div class="col-xs-10 col-sm-9">
+                  <p><em><%= m.team_member_title %></em></p>
+                  <%= markdown m.team_member_description %>
+                </div>
+              </div>
             </div>
           <% end %>
         </div>

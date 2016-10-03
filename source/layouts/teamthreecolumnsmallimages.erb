@@ -1,0 +1,33 @@
+<% wrap_layout :layout do %>
+  <div class="vc3-light-bg">
+    <div class="container">
+      <div class="row content">
+        <div class="col-xs-12">
+          <h1 class="h2"><%= current_page.data.title %></h1>
+        </div>
+      </div>
+      <% data.team.team_members.each_slice(3).to_a.each do |row| %>
+        <div class="row">
+          <% for m in row %>
+            <div class="col-xs-12 col-sm-4">
+              <h2><%= m.team_member_name %></h2>
+              <div class="row">
+                <div class="col-xs-2 col-sm-3">
+                  <p>
+                    <img alt="<%= m.team_member_name %>" class="img-responsive round" src="<%= m.team_member_image %>" />
+                  </p>
+                </div>
+                <div class="col-xs-10 col-sm-9">
+                  <p>
+                    <em><%= m.team_member_title %></em>
+                  </p>
+                  <%= markdown m.team_member_description %>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>

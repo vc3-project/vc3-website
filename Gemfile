@@ -14,6 +14,7 @@ gem 'middleman-blog'
 gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 gem 'middleman-livereload'
+gem 'middleman-navtree'
 gem 'nokogiri'
 gem 'redcarpet'
 
