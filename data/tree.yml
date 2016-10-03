@@ -1,0 +1,18 @@
+---
+index.html.erb: "/index.html.erb"
+CNAME: "/CNAME"
+about.html.markdown: "/about.html.markdown"
+blog:
+  2016-06-07-kickoff-meeting.html.markdown: "/blog/2016-06-07-kickoff-meeting.html.markdown"
+  2016-09-08-ngns-pi-meeting.html.markdown: "/blog/2016-09-08-ngns-pi-meeting.html.markdown"
+  2016-09-08-toy-demo.html.markdown: "/blog/2016-09-08-toy-demo.html.markdown"
+documentation:
+  sectionOne:
+    pageOne.html.markdown: "/documentation/sectionOne/pageOne.html.markdown"
+    pageTwo.html.markdown: "/documentation/sectionOne/pageTwo.html.markdown"
+  sectionTwo:
+    pageOne.html.markdown: "/documentation/sectionTwo/pageOne.html.markdown"
+    pageTwo.html.markdown: "/documentation/sectionTwo/pageTwo.html.markdown"
+news.html.erb: "/news.html.erb"
+team.html.erb: "/team.html.erb"
+thankyou.html.markdown: "/thankyou.html.markdown"
