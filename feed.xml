@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2016-09-08T06:31:52-05:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Play toy demos of primordial VC3 components</title>
+    <link rel="alternate" href="http://blog.url.com/2016/09/08/toy-demo.html"/>
+    <id>http://blog.url.com/2016/09/08/toy-demo.html</id>
+    <published>2016-09-08T06:31:52-05:00</published>
+    <updated>2016-09-11T10:04:41-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Our goal for the fall is to create a "capability demonstrator".  As we're just getting started we'll build from existing software and applications and mold them to higher level abstractions.  The examples below demonstrate prototyping features of a VC3 pilot and factory service.&lt;/p&gt;
+
+&lt;h3 id="deploy-a-global-file-system-on-the-fly"&gt;Deploy a global file system on the fly&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ vc3-pilot --require cvmfs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;script type="text/javascript" src="https://asciinema.org/a/40j5dnd6m67yog3y4qa4tw957.js" id="asciicast-40j5dnd6m67yog3y4qa4tw957" async="" data-size="medium" data-width="100" data-theme="monokai"&gt;&lt;/script&gt;
+
+&lt;h3 id="deploy-the-maker-application-on-the-fly"&gt;Deploy the MAKER application on the fly&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ vc3-pilot --require maker-ecoli-example-01
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;script type="text/javascript" src="https://asciinema.org/a/4qzmcrpmrzssxen6s1knkgw86.js" id="asciicast-4qzmcrpmrzssxen6s1knkgw86" async="" data-size="medium" data-width="100" data-theme="monokai"&gt;&lt;/script&gt;
+
+&lt;h3 id="send-vc3-pilots-to-a-remote-cluster-via-ssh-glide-in"&gt;Send VC3 pilots to a remote cluster via ssh "glide in"&lt;/h3&gt;
+
+&lt;script type="text/javascript" src="https://asciinema.org/a/7a9ku2k4z3ujtnr1v4cjo6mq3.js" id="asciicast-7a9ku2k4z3ujtnr1v4cjo6mq3" async="" data-size="medium" data-width="100" data-theme="monokai"&gt;&lt;/script&gt;
+
+&lt;h3 id="start-vc3-pilots-on-a-resource-requiring-2-factor-authentication"&gt;Start VC3 pilots on a resource requiring 2-factor authentication&lt;/h3&gt;
+
+&lt;script type="text/javascript" src="https://asciinema.org/a/84798.js" id="asciicast-84798" async="" data-size="medium" data-width="100" data-theme="monokai"&gt;&lt;/script&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>Next Generation Networks for Science (NGNS) Principal Investigators' (PI) Meeting</title>
+    <link rel="alternate" href="http://blog.url.com/2016/09/08/ngns-pi-meeting.html"/>
+    <id>http://blog.url.com/2016/09/08/ngns-pi-meeting.html</id>
+    <published>2016-09-08T06:31:52-05:00</published>
+    <updated>2016-09-11T10:04:41-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Today and tomorrow we have the Next Generation Networks for Science (NGNS) Principal Investigators' (PI) Meeting at Argonne National Laboratory.  More information can be found &lt;a href="https://www.orau.gov/ngns2016/default.htm"&gt;here&lt;/a&gt;.  Doug Thain will be giving the VC3 presentation tomorrow.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>VC3 Kickoff Meeting</title>
+    <link rel="alternate" href="http://blog.url.com/2016/06/07/kickoff-meeting.html"/>
+    <id>http://blog.url.com/2016/06/07/kickoff-meeting.html</id>
+    <published>2016-06-07T06:31:52-05:00</published>
+    <updated>2016-09-11T10:04:41-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Our official "kickoff" meeting to get the project formally started.  The main theme will be to revisit our vision and proposal, to identify and carve out the “VC3 space” given changes in the community since the proposal, and to prepare for the &lt;a href="https://www.orau.gov/ngns2016/default.htm"&gt;NGNS PI workshop&lt;/a&gt;.  Expect the meeting will be small and informal with lots of white-boarding.  Success here would be to come out of the meeting with a year 1 program of work and a Fall "capability demonstrator".&lt;/p&gt;
+
+</content>
+  </entry>
+</feed>
