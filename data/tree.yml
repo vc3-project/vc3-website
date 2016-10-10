@@ -13,6 +13,7 @@ documentation:
   sectionTwo:
     pageOne.html.markdown: "/documentation/sectionTwo/pageOne.html.markdown"
     pageTwo.html.markdown: "/documentation/sectionTwo/pageTwo.html.markdown"
+feed.xml.builder: "/feed.xml.builder"
 news.html.erb: "/news.html.erb"
 team.html.erb: "/team.html.erb"
 thankyou.html.markdown: "/thankyou.html.markdown"

@@ -1,3 +1,5 @@
+Time.zone = 'America/Chicago'
+
 ###
 # Page options, layouts, aliases and proxies
 ###

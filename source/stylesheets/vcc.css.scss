@@ -109,7 +109,7 @@ p {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  #navlinks-github, #navlinks-twitter {
+  #navlinks-github, #navlinks-twitter, #navlinks-rss {
     padding-left: 30px;
   }
 }
@@ -117,7 +117,7 @@ p {
   #navlinks-get-project-updates {
     display: none;
   }
-  #navlinks-github, #navlinks-twitter {
+  #navlinks-github, #navlinks-twitter, #navlinks-rss {
     background-position: 0 14px;
     background-repeat: no-repeat;
     color: transparent;
@@ -135,10 +135,17 @@ p {
   }
   #navlinks-twitter {
     background-image: url("/images/twitter-logo-top.png");
-    margin-right: 15px;
+    margin-right: 10px;
   }
   #navlinks-twitter:hover, #navlinks-twitter:active {
     background-image: url("/images/twitter-logo-top-white.png");
+  }
+  #navlinks-rss {
+    background-image: url("/images/rss-logo-top.png");
+    margin-right: 15px;
+  }
+  #navlinks-rss:hover, #navlinks-rss:active {
+    background-image: url("/images/rss-logo-top-white.png");
   }
 }
 
@@ -150,6 +157,9 @@ p {
   }
 }
 
+.unslider .unslider-nav ol {
+  height: 32px;
+}
 .unslider .unslider-nav li {
   background-color: #e4e4e4;
   border: none;
@@ -172,7 +182,7 @@ p {
 }
 
 .lead {
-  color: #aaa;
+  color: $brand-primary;
   font-size: floor(($font-size-base * 3));
   font-weight: 300;
   line-height: floor(($line-height-computed * 2.5));
@@ -238,36 +248,32 @@ p {
   padding-bottom: floor(($line-height-computed * 3));
 }
 
-#background_band_1 {
-  background-image: url("/images/bg-1.png");
+.background_band_1 {
+  background-image: url("/images/bg-4.png");
   background-position: 50% 0;
-  height: 194px;
+  height: 283px;
 }
-#background_band_2 {
-  background-image: url("/images/bg-2.png");
+.background_band_2 {
+  background-image: url("/images/bg-5.png");
   background-position: 50% 0;
-  height: 194px;
-}
-#background_band_3 {
-  background-image: url("/images/bg-3.png");
-  background-position: 50% 0;
-  height: 194px;
+  height: 283px;
 }
 
-.emailform {
+.socialmediaicons {
   background-color: #333333;
-  padding-top: floor(($line-height-computed * 2.5));
+  padding-bottom: floor(($line-height-computed * 2));
+  padding-top: floor(($line-height-computed * 2));
+  a {
+    padding: 0 10px;
+  }
   h2 {
     color: #eeeeee;
     margin-bottom: $line-height-computed;
     text-align: center;
   }
-  form {
-    margin-bottom: floor(($line-height-computed * 3));
-    @media (max-width: $screen-xs-max) {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
+  p {
+    line-height: 112px;
+    text-align: center;
   }
 }
 
